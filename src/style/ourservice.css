@@ -1,0 +1,42 @@
+
+.service-section {
+  overflow: hidden;
+  padding: 6px 0;
+  background: linear-gradient(135deg, #6c5ce7, #71a1e0ff);
+  border-radius: 15px;
+  margin: 4px 0;
+  text-align: center;
+}
+
+.service-section h2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: white;
+  animation: moveLeftToRight 10s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%); 
+  }
+}
+@media (max-width: 768px) {
+  .service-section {
+    padding: 50px 20px;
+  }
+
+  .service-section h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-section h2 {
+    font-size: 1.8rem;
+  }
+}
